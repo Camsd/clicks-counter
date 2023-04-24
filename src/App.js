@@ -1,15 +1,18 @@
 import './App.css';
 import Button from './components/Button';
 import Counter from './components/Counter';
+import { useState } from 'react';
 
 function App() {
 
+  const [numClicks, setNumClicks] = useState(0);
+
   const clickEvent = () =>{
-    console.log('Click');
+    setNumClicks(numClicks + 1);
   }
 
   const restartCounter = () =>{
-    console.log('restart');
+    setNumClicks(0);
   }
 
   return (
@@ -18,7 +21,7 @@ function App() {
         <h1>Clicks counter</h1>
       </div>
       <div className='counter-container'>
-        <Counter numClicks='5' />
+        <Counter numClicks={numClicks} />
       </div>
         <div className='button-container'>
           <Button

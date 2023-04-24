@@ -2,7 +2,8 @@
     min-width: 300px;
     height: 300px;
     font-size: 160px;
-    padding: 25px;
+    padding: 50px;
+    margin-top: 25px;
     color: white;
     display: flex;
     align-items: center;
