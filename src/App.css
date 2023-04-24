@@ -19,7 +19,18 @@ html,body{
     text-align: center;
 }
 
-.main-container{
+.button-container{
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
+
+.counter-container {
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }

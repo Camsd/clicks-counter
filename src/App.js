@@ -1,5 +1,6 @@
 import './App.css';
 import Button from './components/Button';
+import Counter from './components/Counter';
 
 function App() {
 
@@ -16,18 +17,21 @@ function App() {
       <div className='title-container'>
         <h1>Clicks counter</h1>
       </div>
-      <div className='main-container'>
-        <Button
-        text='Click'
-        isClickButton={true}
-        clickEvent={clickEvent}
-        />
+      <div className='counter-container'>
+        <Counter numClicks='5' />
+      </div>
+        <div className='button-container'>
+          <Button
+          text='Click'
+          isClickButton={true}
+          clickEvent={clickEvent}
+          />
 
-        <Button
-        text='Restart'
-        isClickButton={false}
-        clickEvent={restartCounter}
-        />
+          <Button
+          text='Restart'
+          isClickButton={false}
+          clickEvent={restartCounter}
+          />
       </div>
     </div>
   );
