@@ -31,7 +31,7 @@ function App() {
           />
 
           <Button
-          text='Restart'
+          text='Reset'
           isClickButton={false}
           clickEvent={restartCounter}
           />
